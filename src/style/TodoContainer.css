@@ -1,0 +1,44 @@
+.main-todo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  padding: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 5px;
+  gap: 5px;
+}
+
+.todo-container {
+  border-radius: 5px;
+  padding: 8px;
+  border: solid;
+  border-width: 1px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.title-container {
+  font-size: 22px;
+  margin-bottom: 7px;
+}
+
+.todo-content {
+  font-size: 13px;
+}
+
+.delete-validate {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 3px;
+}
+
+.toggle-box {
+  font-size: 22px;
+}
+
+.delete-icon {
+  font-size: 22px;
+}

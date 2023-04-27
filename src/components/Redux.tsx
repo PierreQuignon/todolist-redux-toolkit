@@ -10,9 +10,9 @@ export interface Todo {
 const todoSlice = createSlice({
   name: "todo",
   initialState: [
-    { id: 1, title: "learn React", done: false, content: "make app" },
-    { id: 2, title: "make food", done: false, content: "piemontaise" },
-    { id: 3, title: "do sport", done: true, content: "running" },
+    { id: 1, title: "Apprendre Redux", done: false, content: "Créer une application simple avec React, TypeScript et Redux-Toolkit afin d'apprendre à me servir de Redux-Toolkit" },
+    { id: 2, title: "Faire les courses", done: false, content: "Fromage, dessert, carottes, pate feuilletée, miel, oeufs, beurre, chou fleur" },
+    { id: 3, title: "Progresser en runnig", done: true, content: "Je dois augmenter de 1km par semaine la distance parcouru à chaque sortie" },
   ],
   reducers: {
     addTodo: (state, action: PayloadAction<{ title: string; content: string }>) => {

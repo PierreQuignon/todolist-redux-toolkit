@@ -9,7 +9,7 @@ const TodoCounter: React.FC = () => {
 
   return (
     <div>
-      <p className='border border-black flex flex-col justify-center p-5 rounded h-5'>Nombre de tâches :{todosLength}</p>
+      <p className='border border-black flex flex-col justify-center p-5 rounded h-5'>Nombre de tâches:  {todosLength}</p>
     </div>
    );
 };

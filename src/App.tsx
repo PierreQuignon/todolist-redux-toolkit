@@ -5,6 +5,7 @@ import { Provider } from "react-redux";
 import { store } from "./components/Redux";
 import { FC } from "react";
 import TodoAdder from "./components/TodoAdder.tsx";
+import "../src/style/GlobalStyleApp.css"
 
 export interface Todo {
   id: number;
@@ -17,18 +18,14 @@ const App: FC = () => {
   return (
     <>
       <Provider store={store}>
-        <div className="flex justify-center p-5 m-5 gap-5">
-          <div className="w-1/3">
+        <div className="main-container">
+          <div>
             <TodoAdder />
+            <TodoCounter />
           </div>
-          <div className=" flex text-center border border-black p-5 rounded w-2/3 gap-5">
-            <div className="w-4/5">
+            <div className="main-todo-container">
               <TodoContainer />
             </div>
-            <div className="w-1/5">
-              <TodoCounter/>
-            </div>
-          </div>
         </div>
       </Provider>
     </>
