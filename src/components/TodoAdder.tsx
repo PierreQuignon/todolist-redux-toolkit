@@ -1,14 +1,11 @@
 import { FC, useState } from "react";
-import { Todo as todoType } from "../App";
 import { HiPlusCircle } from "react-icons/hi";
 import { useDispatch } from "react-redux";
 import { addTodo } from "./Redux"
 
-interface ITodoProps {
-  todo: todoType;
-}
 
-const TodoAdder: FC<ITodoProps> = () => {
+
+const TodoAdder: FC = () => {
   const [title, setTitle] = useState<string>("");
   const [content, setContent] = useState<string>("");
   const dispatch = useDispatch();
@@ -36,12 +33,10 @@ const TodoAdder: FC<ITodoProps> = () => {
         />
       </label>
       <button
-        className="border border-black rounded hover:bg-slate-300"
         onClick={() => dispatch(addTodo({title, content}))}
       >
-        <div className="flex">
-          <HiPlusCircle />
-          Soumettre
+        <div className="flex justify-center">
+          <HiPlusCircle className="w-8"/>Ajouter
         </div>
       </button>
     </div>

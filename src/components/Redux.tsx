@@ -24,10 +24,14 @@ const todoSlice = createSlice({
       };
       state.push(newTodo);
     },
+    deleteTodo: (state, action) => {
+      state = state.filter((t) => t.id !== action.payload)
+      return state
+    }
   },
 });
 
-export const { addTodo } = todoSlice.actions;
+export const { addTodo, deleteTodo } = todoSlice.actions;
 
 
 export const store = configureStore({
@@ -35,3 +39,7 @@ export const store = configureStore({
     todo: todoSlice.reducer
   }
 })
+
+
+export type RootState = ReturnType<typeof store.getState>
+export type AppDispatch = typeof store.dispatch

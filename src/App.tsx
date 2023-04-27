@@ -1,6 +1,5 @@
-// import TodoAdder from "./components/TodoAdder";
 import TodoContainer from "./components/TodoContainer.tsx";
-// import TodoCounter from "./components/TodoCounter";
+import TodoCounter from "./components/TodoCounter";
 import "./index.css";
 import { Provider } from "react-redux";
 import { store } from "./components/Redux";
@@ -27,7 +26,7 @@ const App: FC = () => {
               <TodoContainer />
             </div>
             <div className="w-1/5">
-              {/* <TodoCounter/> */}
+              <TodoCounter/>
             </div>
           </div>
         </div>
