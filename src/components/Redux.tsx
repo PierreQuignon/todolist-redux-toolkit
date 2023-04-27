@@ -24,6 +24,12 @@ const todoSlice = createSlice({
       };
       state.push(newTodo);
     },
+    toggleTodo: (state, action) => {
+      const taskTargeted = state.find((t)=> t.id === action.payload);
+      if (taskTargeted) {
+        taskTargeted.done = !taskTargeted.done;
+      }
+    },
     deleteTodo: (state, action) => {
       state = state.filter((t) => t.id !== action.payload)
       return state
@@ -31,7 +37,7 @@ const todoSlice = createSlice({
   },
 });
 
-export const { addTodo, deleteTodo } = todoSlice.actions;
+export const { addTodo, toggleTodo , deleteTodo } = todoSlice.actions;
 
 
 export const store = configureStore({

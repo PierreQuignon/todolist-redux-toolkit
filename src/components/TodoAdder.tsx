@@ -13,7 +13,7 @@ const TodoAdder: FC = () => {
   return (
     <div className="border border-black flex flex-col p-5 rounded">
       <label>
-        Titre
+        Titre de la tâche:
         <input
           className="border border-black p-2 m-2 rounded"
           type="text"
@@ -23,7 +23,7 @@ const TodoAdder: FC = () => {
         />
       </label>
       <label>
-        Content :
+        Contenu de la tâche:
         <input
           className="border border-black p-2 m-2 rounded"
           type="text"
