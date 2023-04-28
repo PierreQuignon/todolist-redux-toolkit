@@ -9,6 +9,7 @@
   padding-right: 25px;
   border-radius: 5px;
   gap: 5px;
+  background-color: #201f32;
 }
 
 .todo-container {
@@ -18,15 +19,23 @@
   border-width: 1px;
   margin-top: 8px;
   margin-bottom: 8px;
+  background-color: #020019;
 }
 
 .title-container {
   font-size: 22px;
   margin-bottom: 7px;
+  color: white;
+  font-weight:700;
 }
 
 .todo-content {
   font-size: 13px;
+  color: rgb(227, 224, 224);
+}
+
+.todo-title {
+  color: rgb(227, 224, 224);
 }
 
 .delete-validate {
@@ -37,8 +46,10 @@
 
 .toggle-box {
   font-size: 22px;
+  color: rgb(3, 193, 250);
 }
 
 .delete-icon {
   font-size: 22px;
+  color: rgb(227, 224, 224);
 }

@@ -1,12 +1,31 @@
 .button-add {
   display: flex;
   justify-content: center;
+  align-items: center;
   border: solid;
-  border-radius: 7px;
+  border-radius: 9px;
   width: 70px;
+  height: 30px;
   border-width: 1px;
   margin-top: 8px;
+  color: rgb(227, 224, 224);
+  background-color: #201f32;
 }
+
+.button-add:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid;
+  border-radius: 9px;
+  width: 70px;
+  height: 30px;
+  border-width: 1px;
+  margin-top: 8px;
+  color: rgb(3, 193, 250);
+  background-color: #020019;
+}
+
 
 .container-adder {
   display: flex;
@@ -16,4 +35,14 @@
   padding: 17px;
   border-radius: 5px;
   margin-bottom: 16px;
+  background-color: #201f32;
+}
+
+input {
+  background-color: #020019;
+  color: white;
+}
+
+input::placeholder {
+  color: #d0cece; /* couleur du placeholder */
 }

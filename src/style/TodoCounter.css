@@ -1,0 +1,11 @@
+.todo-counter {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.25rem;
+  border-radius: 0.25rem;
+  height: 1.25rem;
+  color: rgb(227, 224, 224);
+  background-color: #201f32;
+}

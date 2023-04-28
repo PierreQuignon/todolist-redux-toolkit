@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { useSelector } from 'react-redux';
 import { RootState } from './Redux';
+import "../style/TodoCounter.css"
 
 
 const TodoCounter: React.FC = () => {
@@ -9,7 +10,7 @@ const TodoCounter: React.FC = () => {
 
   return (
     <div>
-      <p className='border border-black flex flex-col justify-center p-5 rounded h-5'>Nombre de tâches:  {todosLength}</p>
+      <p className='todo-counter'>Nombre de tâches:  {todosLength}</p>
     </div>
    );
 };
