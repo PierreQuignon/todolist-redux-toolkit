@@ -26,7 +26,6 @@
   background-color: #020019;
 }
 
-
 .container-adder {
   display: flex;
   flex-direction: column;
@@ -44,5 +43,5 @@ input {
 }
 
 input::placeholder {
-  color: #d0cece; /* couleur du placeholder */
+  color: #d0cece;
 }
