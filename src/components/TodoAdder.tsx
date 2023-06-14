@@ -1,9 +1,9 @@
-import { FC, useState } from "react";
+import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addTodo } from "./Redux";
 import "../style/TodoAdder.css"
 
-const TodoAdder: FC = () => {
+const TodoAdder = () => {
   const [title, setTitle] = useState<string>("");
   const [content, setContent] = useState<string>("");
   const dispatch = useDispatch();

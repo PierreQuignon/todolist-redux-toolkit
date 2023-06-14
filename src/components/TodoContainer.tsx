@@ -1,4 +1,3 @@
-import * as React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Todo as todoType } from "../App";
 import { MdDelete } from "react-icons/md";
@@ -8,7 +7,7 @@ import { AiOutlineCheckSquare } from "react-icons/ai";
 import { RootState } from "./Redux";
 import "../style/TodoContainer.css";
 
-const TodoContainer: React.FC = () => {
+const TodoContainer = () => {
   const todos = useSelector((state: RootState) => state.todo);
   const dispatch = useDispatch();
 
