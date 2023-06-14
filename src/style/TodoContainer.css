@@ -53,3 +53,8 @@
   font-size: 22px;
   color: rgb(227, 224, 224);
 }
+
+.delete-icon:hover {
+  font-size: 22px;
+  color: rgb(3, 193, 250);
+}
